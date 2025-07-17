@@ -2,303 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="-yGOueQ5SQs563EpmSPKnkcIYyPKoTA7yz1JVPY3y9c" />
   <title>TURA Cleaning Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    #sticky-cta {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 50;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-800 font-sans">
-
-  <!-- Navigation -->
-  <nav class="bg-white shadow fixed top-0 left-0 right-0 z-40">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-      <div class="flex items-center space-x-3">
-        <img src="logo.png" alt="TURA Logo" class="h-10" />
-        <span class="font-bold text-blue-600 text-xl">TURA Cleaning Solutions</span>
-      </div>
-      <ul class="hidden md:flex space-x-6 font-semibold text-gray-700">
-        <li><a href="#hero" class="hover:text-blue-600">Home</a></li>
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#services" class="hover:text-blue-600">Services</a></li>
-        <li><a href="#testimonials" class="hover:text-blue-600">Testimonials</a></li>
-        <li><a href="#eco" class="hover:text-blue-600">Eco-Friendly</a></li>
-        <li><a href="#offers" class="hover:text-blue-600">Offers</a></li>
-        <li><a href="#faq" class="hover:text-blue-600">FAQ</a></li>
-        <li><a href="#booking" class="hover:text-blue-600">Booking</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-      </ul>
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TURA Cleaning Solutions</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About Us</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#testimonials" class="hover:underline">Testimonials</a>
+        <a href="#specials" class="hover:underline">Special Offers</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="pt-20 bg-blue-50 py-20 text-center">
-    <h1 class="text-5xl font-bold text-blue-600 mb-4">More than cleaning, it’s a transformation.</h1>
-    <p class="text-gray-700 text-xl max-w-3xl mx-auto">
-      Bringing sparkle, hygiene and peace of mind to every space we touch.
-    </p>
+  <section class="text-center py-12 px-4 bg-gray-100">
+    <h2 class="text-4xl font-bold text-blue-600 mb-4">More than cleaning, it’s a transformation.</h2>
+    <p class="text-lg text-gray-700 mb-6">Trusted cleaning services for homes & businesses in Port Moresby</p>
+    <img src="logo.png" alt="TURA Cleaning Logo" class="mx-auto mb-6 w-32">
   </section>
 
-  <!-- About Us -->
-  <section id="about" class="py-12 bg-white px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-blue-600 mb-4">About Us</h2>
-      <p class="text-gray-700 text-lg">
-        TURA Cleaning Solutions is a mobile cleaning service based in Port Moresby, Papua New Guinea.
-        We specialize in transforming homes, offices, and commercial spaces through exceptional cleaning services —
-        all booked and managed online for your convenience.
+  <!-- About Section -->
+  <section id="about" class="py-12 px-6">
+    <h3 class="text-3xl font-bold mb-4 text-blue-600">About Us</h3>
+    <p class="text-gray-700 leading-relaxed">TURA CLEANING SOLUTIONS is a mobile cleaning unit based in Port Moresby, PNG. We specialize in residential and commercial cleaning services including carpet care, post-construction cleaning, yard cleanup, and sanitation spray-downs. Our mission is to not just clean — but transform spaces.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-12 px-6">
+    <h3 class="text-3xl font-bold mb-6 text-blue-600">Our Services</h3>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+      <li><strong>🧼 Standard Cleaning</strong> – Surface cleaning, dusting, mopping & sanitizing.</li>
+      <li><strong>🏠 Deep Cleaning</strong> – Thorough top-to-bottom cleaning for all spaces.</li>
+      <li><strong>🧯 Disinfection</strong> – Virus-safe disinfection with hospital-grade solutions.</li>
+      <li><strong>🚪 Move In/Out Cleaning</strong> – Perfect for end-of-lease or new tenant prep.</li>
+      <li><strong>🏗️ Post-Construction</strong> – Clear debris, dust, and polish newly built or renovated spaces.</li>
+      <li><strong>🌿 Yard & Outdoor Cleaning</strong> – Sweep, remove debris, trim grass & clean driveways.</li>
+    </ul>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section id="specials" class="py-12 px-6">
+    <h3 class="text-3xl font-bold mb-4 text-blue-600">🎉 July Special Offer</h3>
+    <p class="text-gray-700 leading-relaxed">
+      <strong>50% OFF Clean Package</strong> – TURA JULY SPECIAL: Big savings for a clean start!
+      For a limited time only, TCS is offering 50% OFF our standard rates for:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 my-4">
+      <li>Residential cleaning</li>
+      <li>Move In/Out cleaning</li>
+      <li>Post-Construction cleanup</li>
+      <li>Yard cleaning</li>
+      <li>Home and office spray-down</li>
+    </ul>
+    <p class="text-red-600 font-semibold">Limited offer — valid only for the month of July!</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-gray-100 py-12 px-6">
+    <h3 class="text-3xl font-bold mb-6 text-blue-600">Customer Reviews</h3>
+    <blockquote class="text-gray-700 italic border-l-4 border-blue-500 pl-4 mb-4">“TURA did an incredible job. Our office has never looked better!” – Jane A., Port Moresby</blockquote>
+    <blockquote class="text-gray-700 italic border-l-4 border-blue-500 pl-4">“They arrived on time, were super friendly, and cleaned every corner!” – Moses L., Waigani</blockquote>
+  </section>
+
+  <!-- Eco-Friendly Section -->
+  <section class="py-12 px-6">
+    <h3 class="text-3xl font-bold mb-4 text-blue-600">🌱 Eco-Friendly Commitment</h3>
+    <p class="text-gray-700 leading-relaxed">We use biodegradable cleaning products and sustainable practices to keep your space clean and our environment safe.</p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="bg-gray-100 py-12 px-6">
+    <h3 class="text-3xl font-bold mb-6 text-blue-600">Frequently Asked Questions</h3>
+    <div class="space-y-4 text-gray-700">
+      <details>
+        <summary class="font-semibold cursor-pointer">Do you bring your own cleaning supplies?</summary>
+        <p class="mt-2">Yes, we provide all necessary cleaning materials and tools.</p>
+      </details>
+      <details>
+        <summary class="font-semibold cursor-pointer">How do I make a booking?</summary>
+        <p class="mt-2">Use the contact form below or message us directly on WhatsApp.</p>
+      </details>
+      <details>
+        <summary class="font-semibold cursor-pointer">Are your services insured?</summary>
+        <p class="mt-2">Yes, we are a registered and insured business.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Appointment Calendar -->
+  <section class="py-12 px-6">
+    <h3 class="text-3xl font-bold mb-6 text-blue-600">📅 View Availability</h3>
+    <iframe src="https://calendar.google.com/calendar/embed?src=turacleaningsolutions%40gmail.com&ctz=Australia%2FSydney" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-600 text-white py-12 px-6">
+    <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+    <form action="https://formspree.io/f/myzpyrnb" method="POST" class="space-y-4 max-w-xl mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded text-gray-800" required />
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded text-gray-800" required />
+      <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 rounded text-gray-800" required></textarea>
+      <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded font-bold">Send Message</button>
+    </form>
+    <div class="mt-8 text-center">
+      <p class="text-lg">📞 WhatsApp: <a href="https://wa.me/67570334772" class="underline">70334772</a> or <a href="https://wa.me/67582068252" class="underline">82068252</a></p>
+      <p class="mt-2">
+        <a href="https://facebook.com/turacleaningsolutions" class="underline mr-4">Facebook</a>
+        <a href="https://linkedin.com/company/turacleaningsolutions" class="underline">LinkedIn</a>
       </p>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="py-12 bg-gray-100 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-semibold mb-2">Carpet Cleaning</h3>
-          <p class="text-gray-600 mb-2">
-            Our professional carpet cleaning removes deep-seated dirt, stains, and allergens, restoring your carpets’ freshness and extending their life.
-          </p>
-          <ul class="text-gray-500 text-sm list-disc list-inside">
-            <li>Hot water extraction & steam cleaning</li>
-            <li>Stain & odor removal</li>
-            <li>Safe for kids and pets</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-semibold mb-2">Residential & Commercial Cleaning</h3>
-          <p class="text-gray-600 mb-2">
-            Tailored cleaning services for homes and workplaces, ensuring hygienic, spotless environments that promote health and productivity.
-          </p>
-          <ul class="text-gray-500 text-sm list-disc list-inside">
-            <li>Regular & deep cleaning packages</li>
-            <li>Flexible scheduling</li>
-            <li>Experienced & trustworthy staff</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-semibold mb-2">Post-Construction Cleaning</h3>
-          <p class="text-gray-600 mb-2">
-            Comprehensive cleaning after construction or renovation to remove dust, debris, and residues, leaving your property move-in ready.
-          </p>
-          <ul class="text-gray-500 text-sm list-disc list-inside">
-            <li>Removal of dust & construction waste</li>
-            <li>Window & fixture cleaning</li>
-            <li>Safe disposal of materials</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-semibold mb-2">Move In/Out Cleaning</h3>
-          <p class="text-gray-600 mb-2">
-            Make your move hassle-free with thorough cleaning that meets landlord or new homeowner standards.
-          </p>
-          <ul class="text-gray-500 text-sm list-disc list-inside">
-            <li>Complete cleaning of kitchens, bathrooms, & living areas</li>
-            <li>Carpet & floor cleaning</li>
-            <li>Customizable checklists</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-semibold mb-2">Deep Cleaning</h3>
-          <p class="text-gray-600 mb-2">
-            Intensive cleaning for hard-to-reach areas and high-touch surfaces to ensure a hygienic and fresh environment.
-          </p>
-          <ul class="text-gray-500 text-sm list-disc list-inside">
-            <li>Kitchen appliances & cabinets</li>
-            <li>Baseboards, vents, and blinds</li>
-            <li>Sanitizing bathrooms & fixtures</li>
-          </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-semibold mb-2">Standard & Disinfection</h3>
-          <p class="text-gray-600 mb-2">
-            Routine cleaning combined with expert disinfection to keep your space safe from germs and viruses.
-          </p>
-          <ul class="text-gray-500 text-sm list-disc list-inside">
-            <li>High-touch surface sanitizing</li>
-            <li>Use of EPA-approved disinfectants</li>
-            <li>Customized cleaning plans</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-12 bg-white px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-600 mb-8 text-center">Customer Testimonials</h2>
-    <div class="space-y-8">
-      <blockquote class="bg-blue-50 p-6 rounded shadow">
-        <p class="italic text-gray-700">"TURA Cleaning Solutions transformed my office! Professional and reliable service — highly recommended."</p>
-        <footer class="mt-4 text-right text-blue-600 font-semibold">– Sarah K.</footer>
-      </blockquote>
-      <blockquote class="bg-blue-50 p-6 rounded shadow">
-        <p class="italic text-gray-700">"Amazing carpet cleaning service. My home feels fresh and spotless again!"</p>
-        <footer class="mt-4 text-right text-blue-600 font-semibold">– John M.</footer>
-      </blockquote>
-      <blockquote class="bg-blue-50 p-6 rounded shadow">
-        <p class="italic text-gray-700">"Friendly staff and thorough cleaning. Great value for money."</p>
-        <footer class="mt-4 text-right text-blue-600 font-semibold">– Maria T.</footer>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- Eco-Friendly Practices -->
-  <section id="eco" class="py-12 bg-gray-100 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-600 mb-6 text-center">Eco-Friendly Practices</h2>
-    <p class="text-gray-700 text-center max-w-3xl mx-auto mb-6">
-      At TURA Cleaning Solutions, we are committed to protecting the environment. We use eco-friendly, biodegradable cleaning products that are safe for your family, pets, and the planet. Our cleaning methods minimize water usage and waste, helping create a healthier community.
-    </p>
-    <ul class="list-disc list-inside text-gray-600 max-w-2xl mx-auto space-y-2">
-      <li>Use of non-toxic, plant-based cleaning agents</li>
-      <li>Energy-efficient equipment</li>
-      <li>Responsible waste disposal and recycling</li>
-      <li>Continuous training on green cleaning practices</li>
-    </ul>
-  </section>
-
-  <!-- Special Offers & Discounts -->
-  <section id="offers" class="py-12 bg-yellow-50 px-6 max-w-4xl mx-auto rounded-lg shadow-md">
-    <h2 class="text-3xl font-bold text-yellow-600 mb-8 text-center">Special Offers & Discounts</h2>
-    <div class="space-y-6 text-gray-800 text-center text-lg font-semibold">
-      <p>🎉 <strong>50% OFF Clean Package - TURA JULY SPECIAL!</strong></p>
-      <p>Big savings for a clean start! For a limited time only, TURA Cleaning Solutions is offering <strong>50% OFF</strong> our standard rates throughout July.</p>
-      <p>This includes:</p>
-      <ul class="list-disc list-inside max-w-md mx-auto text-left text-gray-700 font-normal">
-        <li>Residential Cleaning</li>
-        <li>Move In/Out Cleaning</li>
-        <li>Post Construction Cleaning</li>
-        <li>Yard Cleaning</li>
-        <li>Home and Office Spray Down</li>
-      </ul>
-      <p class="font-semibold mt-4">Limited offer — book now to secure your slot!</p>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="py-12 bg-white px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-600 mb-8 text-center">Frequently Asked Questions</h2>
-
-    <div class="space-y-6">
-      <div>
-        <h3 class="font-semibold text-xl cursor-pointer text-blue-700">What areas do you serve?</h3>
-        <p class="mt-2 text-gray-700">We primarily serve Port Moresby and surrounding areas, with plans to expand soon.</p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-xl cursor-pointer text-blue-700">How do I book a service?</h3>
-        <p class="mt-2 text-gray-700">You can book a site inspection via the contact form or email us directly at <a href="mailto:turacleaningsolutions@gmail.com" class="underline text-blue-600">turacleaningsolutions@gmail.com</a>.</p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-xl cursor-pointer text-blue-700">What cleaning products do you use?</h3>
-        <p class="mt-2 text-gray-700">We use eco-friendly and safe cleaning products suitable for homes and commercial properties.</p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-xl cursor-pointer text-blue-700">Are your staff trained and insured?</h3>
-        <p class="mt-2 text-gray-700">Yes, all our staff are professionally trained and insured to ensure quality and safety.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Booking Form Section -->
-  <section id="booking" class="py-12 bg-gray-100 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-600 mb-6 text-center">Online Booking</h2>
-    <p class="text-center text-gray-600 mb-8">Please fill out the form below to request a site inspection or a service quote.</p>
-
-    <form action="https://formspree.io/f/myzpyrnb" method="POST" class="space-y-6 bg-white p-6 rounded-lg shadow-md">
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-        <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border border-gray-300 p-2" />
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border border-gray-300 p-2" />
-      </div>
-      <div>
-        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required class="mt-1 block w-full rounded-md border border-gray-300 p-2" />
-      </div>
-      <div>
-        <label for="service" class="block text-sm font-medium text-gray-700">Service Required</label>
-        <select id="service" name="service" required class="mt-1 block w-full rounded-md border border-gray-300 p-2">
-          <option value="">Select a service</option>
-          <option value="Carpet Cleaning">Carpet Cleaning</option>
-          <option value="Residential & Commercial">Residential & Commercial</option>
-          <option value="Post-Construction">Post-Construction</option>
-          <option value="Move In/Out Cleaning">Move In/Out Cleaning</option>
-          <option value="Deep Cleaning">Deep Cleaning</option>
-          <option value="Standard & Disinfection">Standard & Disinfection</option>
-        </select>
-      </div>
-      <div>
-        <label for="message" class="block text-sm font-medium text-gray-700">Additional Details</label>
-        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border border-gray-300 p-2"></textarea>
-      </div>
-      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
-        Submit Booking Request
-      </button>
-    </form>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-white px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-600 mb-6 text-center">Contact Us</h2>
-    <p class="text-center text-gray-600 mb-8">Have a question or want to request a quote? Send us a message!</p>
-
-    <form action="https://formspree.io/f/myzpyrnb" method="POST" class="space-y-6 bg-gray-100 p-6 rounded-lg shadow-md">
-      <div>
-        <label for="name-contact" class="block text-sm font-medium text-gray-700">Name</label>
-        <input type="text" id="name-contact" name="name" required class="mt-1 block w-full rounded-md border border-gray-300 p-2" />
-      </div>
-      <div>
-        <label for="email-contact" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="email-contact" name="email" required class="mt-1 block w-full rounded-md border border-gray-300 p-2" />
-      </div>
-      <div>
-        <label for="message-contact" class="block text-sm font-medium text-gray-700">Message</label>
-        <textarea id="message-contact" name="message" rows="4" required class="mt-1 block w-full rounded-md border border-gray-300 p-2"></textarea>
-      </div>
-      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
-        Send Message
-      </button>
-    </form>
-
-    <div class="mt-8 text-center">
-      <p class="text-gray-600">Connect with us:</p>
-      <div class="flex justify-center space-x-4 mt-2">
-        <a href="https://facebook.com/turacleaningsolutions" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">Facebook</a>
-        <a href="https://linkedin.com/company/turacleaningsolutions" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">LinkedIn</a>
-        <a href="https://wa.me/67570334772" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 font-semibold">WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sticky Call to Action -->
-  <a
-    id="sticky-cta"
-    href="#booking"
-    class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-blue-700 transition duration-300 fixed bottom-6 right-6 z-50"
-  >
-    Book Now
-  </a>
-
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 TURA CLEANING SOLUTIONS. All rights reserved.</p>
+  </footer>
 </body>
 </html>
