@@ -18,6 +18,7 @@
         <a href="#services" class="hover:underline">Services</a>
         <a href="#specials" class="hover:underline">Specials</a>
         <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#booking" class="hover:underline">Booking</a>
         <a href="#contact" class="hover:underline">Contact</a>
       </nav>
     </div>
@@ -126,6 +127,37 @@
         <p class="text-gray-700">Yes, we can tailor our services to suit your unique requirements. Contact us for a free consultation and quote based on your specific needs.</p>
       </div>
     </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking" class="bg-gray-50 py-12 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-6 text-center text-blue-700">Book a Cleaning Service</h3>
+    <form action="https://formspree.io/f/myzpyrnb" method="POST" class="grid gap-4 max-w-xl mx-auto bg-white p-6 rounded shadow">
+      <input type="text" name="name" placeholder="Full Name" required class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" name="email" placeholder="Email Address" required class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="tel" name="phone" placeholder="Phone Number" required class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      
+      <label for="service" class="font-semibold">Select Service</label>
+      <select id="service" name="service" required class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="" disabled selected>Select a service</option>
+        <option value="Standard Cleaning">Standard Cleaning</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+        <option value="Move In / Move Out">Move In / Move Out</option>
+        <option value="Post-Construction Cleaning">Post-Construction Cleaning</option>
+        <option value="Disinfection & Spray Downs">Disinfection & Spray Downs</option>
+        <option value="Yard & Outdoor Cleaning">Yard & Outdoor Cleaning</option>
+      </select>
+      
+      <label for="date" class="font-semibold">Preferred Date</label>
+      <input type="date" id="date" name="preferred_date" required class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      
+      <label for="time" class="font-semibold">Preferred Time</label>
+      <input type="time" id="time" name="preferred_time" required class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      
+      <textarea name="notes" placeholder="Additional details or requests" rows="4" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      
+      <button type="submit" class="bg-blue-700 text-white font-bold py-3 rounded hover:bg-blue-800 transition">Submit Booking</button>
+    </form>
   </section>
 
   <!-- Contact -->
