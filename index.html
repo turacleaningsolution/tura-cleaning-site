@@ -89,22 +89,64 @@
     </ul>
   </section>
 
-  <!-- Testimonials -->
+  <!-- Testimonials with Dynamic Star Ratings -->
   <section class="bg-gray-100 py-12 px-4">
     <div class="max-w-5xl mx-auto">
       <h3 class="text-3xl font-bold mb-6">What Our Clients Say</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <blockquote class="bg-white p-4 rounded shadow">
-          <p>“Incredible service! The house looked brand new again.”</p>
-          <footer class="mt-2 text-sm text-gray-600">– Sarah L.</footer>
-        </blockquote>
-        <blockquote class="bg-white p-4 rounded shadow">
-          <p>“Professional and reliable. Highly recommend TURA.”</p>
-          <footer class="mt-2 text-sm text-gray-600">– John M.</footer>
-        </blockquote>
+      <div id="reviews" class="grid md:grid-cols-2 gap-6">
+        <!-- Reviews will be inserted here by JS -->
       </div>
     </div>
   </section>
+
+  <script>
+    const reviews = [
+      {
+        name: "Sarah L.",
+        rating: 5,
+        comment: "Incredible service! The house looked brand new again."
+      },
+      {
+        name: "John M.",
+        rating: 4,
+        comment: "Professional and reliable. Highly recommend TURA."
+      },
+      {
+        name: "Emily R.",
+        rating: 5,
+        comment: "The team was punctual, thorough, and very friendly. Will book again!"
+      },
+      {
+        name: "Mark T.",
+        rating: 4,
+        comment: "Great cleaning with attention to detail. Made my office sparkle."
+      }
+    ];
+
+    const reviewsContainer = document.getElementById('reviews');
+
+    function getStars(rating) {
+      const maxStars = 5;
+      let stars = "";
+      for (let i = 1; i <= maxStars; i++) {
+        stars += i <= rating ? "&#9733;" : "&#9734;";
+      }
+      return stars;
+    }
+
+    reviews.forEach(review => {
+      const reviewBlock = document.createElement('blockquote');
+      reviewBlock.className = "bg-white p-4 rounded shadow";
+
+      reviewBlock.innerHTML = `
+        <p class="mb-2">“${review.comment}”</p>
+        <div class="text-yellow-500 text-lg mb-2">${getStars(review.rating)}</div>
+        <footer class="text-sm text-gray-600">– ${review.name}</footer>
+      `;
+
+      reviewsContainer.appendChild(reviewBlock);
+    });
+  </script>
 
   <!-- FAQ -->
   <section id="faq" class="px-4 py-12 max-w-5xl mx-auto">
